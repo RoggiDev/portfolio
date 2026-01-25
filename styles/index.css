@@ -14,11 +14,11 @@
   z-index: -1;
 }
 
-.c-offvancas {
+.c-offcanvas {
   background: transparent;
 }
 
-.c-offvancas::before {
+.c-offcanvas::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -26,6 +26,15 @@
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   z-index: -1;
+}
+
+.c-offcanvas-header {
+  background-color: var(--base-color);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.c-offcanvas-title {
+  color: var(--alternative-text);
 }
 
 /* ! Hero Section */
