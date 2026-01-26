@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./styles/shared/site.css" />
     <link rel="stylesheet" href="./styles/shared/theme.css" />
     <link rel="stylesheet" href="./styles/shared/variables.css" />
+    <link rel="stylesheet" href="./styles/shared/layout.css" />
 
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
@@ -37,7 +38,9 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top c-navbar">
         <div class="container">
-          <a class="navbar-brand fw-bold text-white" href="#"> ROGGI DEV </a>
+          <a class="navbar-brand fw-bold c-navbar-title" href="#hero">
+            ROGGI DEV
+          </a>
 
           <button
             class="navbar-toggler"
@@ -78,7 +81,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">About Me</a>
+                  <a class="nav-link text-white" href="#about">About Me</a>
                 </li>
 
                 <li class="nav-item">
@@ -102,7 +105,7 @@
     <!-- Main -->
     <main class="c-container">
       <!-- Hero Section -->
-      <section id="heroSection" class="c-hero-section">
+      <section id="hero" class="c-hero-section">
         <div
           class="container py-5 d-flex flex-column justify-content-center align-items-center gap-3 text-center w-100 h-100"
         >
@@ -153,20 +156,54 @@
       </section>
 
       <!-- About Section -->
-      <!-- <section id="aboutSection">
-        <div class="container py-5">
-          <div class="c-about-card">
-            <h2>About Me</h2>
+      <section id="about">
+        <div
+          class="container py-5 d-flex justify-content-center align-items-center"
+        >
+          <div class="px-4 py-5 p-sm-5 d-flex flex-column gap-4 c-about-card">
+            <div class="d-flex flex-column gap-4">
+              <!-- <h2 class="mb-0 c-title">About Me</h2> -->
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              libero dolorum ea, quas magnam ipsam hic praesentium ut illo
-              suscipit commodi asperiores quis a placeat soluta vero. Pariatur,
-              voluptas obcaecati.
-            </p>
+              <p class="mb-0 c-text">
+                Hi I'm Yael Rodríguez (Roggi), Front End Web Developer focused
+                on building modern and responsive user interfaces. I'm detail
+                oriented and enjoy creating not only functional, but visually
+                engaging and interactive websites and web applications,
+                combining clean code, reusable components, smooth animations and
+                modern development practices. I enjoy taking on challenges,
+                solving problems, and learning new technologies that allow me to
+                build more creative user experiences and grow as a developer.
+              </p>
+            </div>
+
+            <div
+              class="row gap-5 justify-content-center justify-content-sm-start"
+            >
+              <div
+                class="col-auto d-flex flex-column gap-3 text-center text-sm-start"
+              >
+                <p class="mb-0 d-flex justify-content-center c-data">01 +</p>
+
+                <p class="mb-0 text-center c-text">
+                  Years of <br />
+                  Experience
+                </p>
+              </div>
+
+              <div
+                class="col-auto d-flex flex-column gap-3 text-center text-sm-start"
+              >
+                <p class="mb-0 d-flex justify-content-center c-data">05</p>
+
+                <p class="mb-0 text-center c-text">
+                  Projects <br />
+                  Made
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Footer -->
