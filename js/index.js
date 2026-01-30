@@ -10,25 +10,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   gsap.to(".c-timeline-line", {
-    height: "100%",
     scrollTrigger: {
       trigger: ".c-timeline",
       start: "top center",
       end: "bottom center",
-      scrub: true,
+      scrub: 2,
       // markers: true,
     },
+    height: "100%",
+    duration: 1,
+    ease: "power1.inOut",
   });
 
   gsap.to(".c-timeline-dot", {
-    top: "100%",
     scrollTrigger: {
       trigger: ".c-timeline",
       start: "top center",
       end: "bottom center",
-      scrub: true,
+      scrub: 2,
       // markers: true,
     },
+    top: "100%",
+    duration: 1,
+    ease: "power1.inOut",
   });
 });
 
