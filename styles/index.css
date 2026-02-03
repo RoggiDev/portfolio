@@ -299,13 +299,19 @@
 }
 
 .c-project-description {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   margin-bottom: 0rem;
 }
 
 .c-card-body .c-tech-list {
   display: flex;
   flex-wrap: wrap;
+  gap: calc(1rem * 0.5);
+}
+
+.c-project-links {
+  display: flex;
+  flex-direction: column;
   gap: calc(1rem * 0.5);
 }
 
@@ -436,6 +442,10 @@
     border-bottom-right-radius: 0rem;
     border-top-left-radius: calc(15px + 0.5rem);
     border-bottom-left-radius: calc(15px + 0.5rem);
+  }
+
+  .c-project-links {
+    gap: calc(1rem * 1);
   }
 }
 
