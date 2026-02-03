@@ -20,6 +20,7 @@
 
 .c-navbar-title {
   font-family: "Audiowide";
+  color: var(--alternative-text);
 }
 
 .c-offcanvas {
@@ -44,4 +45,15 @@
 .c-offcanvas-title-link {
   color: var(--alternative-text);
   font-family: "Audiowide";
+}
+
+.c-footer {
+  background: transparent;
+  border-top: 1px solid #ffffff50;
+}
+
+.c-footer .c-socials-icon {
+  fill: var(--alternative-text);
+  width: 1.5rem;
+  aspect-ratio: 1;
 }
