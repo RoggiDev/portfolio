@@ -1,3 +1,11 @@
+#hero,
+#about,
+#myStack,
+#experience,
+#projects {
+  scroll-margin-top: 56px;
+}
+
 /* ! Hero Section */
 .c-hero-section {
   margin-top: 56px;
