@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
   gsap.to(spinnerOverlay, {
     opacity: 0,
     duration: 0.6,
-    delay: 1,
+    delay: 2,
     ease: "power1.out",
     onComplete() {
       spinnerOverlay.style.pointerEvents = "none";

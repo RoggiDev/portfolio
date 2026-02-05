@@ -204,8 +204,8 @@
   border-radius: 50%;
   background: radial-gradient(
     circle at center,
-    var(--alternative-text) 0%,
-    var(--alternative-text) 20%,
+    var(--primary-text) 0%,
+    var(--primary-text) 20%,
     var(--primary-color) 55%,
     transparent 70%
   );
@@ -279,7 +279,7 @@
 /* ! Projects */
 .c-card {
   background-color: var(--base-color);
-  color: var(--alternative-text);
+  color: var(--primary-text);
   border-radius: 15px;
   background-color: rgba(23, 23, 23, 0.1);
   -webkit-backdrop-filter: blur(10px);
@@ -324,7 +324,7 @@
 .c-project-link {
   display: flex;
   gap: calc(1rem * 0.5);
-  color: var(--alternative-text);
+  color: var(--primary-text);
   font-size: 1rem;
   transition:
     gap 0.25s ease-out,
