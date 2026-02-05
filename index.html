@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roggi Dev - Front End Developer</title>
 
+    <link
+      rel="shortcut icon"
+      href="./media/images/favicon.ico"
+      type="image/x-icon"
+    />
+
     <!-- Libraries -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -27,8 +33,8 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
 
-  <body class="">
-    <!-- Header -->
+  <body>
+    <!-- ! Header -->
     <header>
       <!-- Navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top c-navbar">
@@ -100,7 +106,7 @@
       </nav>
     </header>
 
-    <!-- Main -->
+    <!-- ! Main -->
     <main class="c-container">
       <!-- Hero Section -->
       <section id="hero" class="c-hero-section">
@@ -208,7 +214,7 @@
             >
               <div class="col d-flex flex-column flex-md-row gap-3 gap-md-5">
                 <p class="mb-0 d-flex justify-content-center gap-2 c-data">
-                  01 <span>+</span>
+                  <span class="c-data-number">01</span> <span>+</span>
                 </p>
 
                 <p class="mb-0 align-content-center text-center c-data-text">
@@ -217,7 +223,9 @@
               </div>
 
               <div class="col d-flex flex-column flex-md-row gap-3 gap-md-5">
-                <p class="mb-0 d-flex justify-content-center c-data">05</p>
+                <p class="mb-0 d-flex justify-content-center c-data">
+                  <span class="c-data-number">03</span>
+                </p>
 
                 <p class="mb-0 align-content-center text-center c-data-text">
                   Highlight Projects
@@ -446,7 +454,7 @@
 
             <div class="d-flex flex-column gap-4 c-experience-container">
               <!-- # 01 -->
-              <div class="c-work-wrapper">
+              <div class="c-work-trigger">
                 <div class="p-4 c-work-experience">
                   <div class="d-flex flex-column gap-2">
                     <p class="mb-0 c-post">Front End Developer</p>
@@ -507,7 +515,7 @@
               </div>
 
               <!-- # 02 -->
-              <div class="c-work-wrapper">
+              <div class="c-work-trigger">
                 <div class="p-4 c-work-experience">
                   <div class="d-flex flex-column gap-2">
                     <p class="mb-0 c-post">Web Developer Intern</p>
@@ -583,7 +591,7 @@
 
             <div class="d-flex flex-column gap-4">
               <!-- # 01 -->
-              <div class="c-card-wrapper">
+              <div class="c-card-trigger">
                 <div class="card c-card c-card-right">
                   <div class="row g-0">
                     <div class="col-12 col-lg order-1 order-lg-0">
@@ -640,7 +648,7 @@
 
                     <div class="col-12 col-lg-7 order-0 order-lg-1">
                       <img
-                        src="./media/images/timbremosjuntos.png"
+                        src="./media/images/timbremos juntos.webp"
                         class="c-project-img c-project-right"
                         alt="..."
                       />
@@ -650,12 +658,12 @@
               </div>
 
               <!-- # 02 -->
-              <div class="c-card-wrapper">
+              <div class="c-card-trigger">
                 <div class="card c-card c-card-left">
                   <div class="row g-0">
                     <div class="col-12 col-lg-7 order-0 order-lg-0">
                       <img
-                        src="./media/images/gta landing page.png"
+                        src="./media/images/gta landing page.webp"
                         class="c-project-img c-project-left"
                         alt="..."
                       />
@@ -739,7 +747,7 @@
               </div>
 
               <!-- # 03 -->
-              <div class="c-card-wrapper">
+              <div class="c-card-trigger">
                 <div class="card c-card c-card-right">
                   <div class="row g-0">
                     <div class="col-12 col-lg order-1 order-lg-0">
@@ -824,7 +832,7 @@
 
                     <div class="col-12 col-lg-7 order-0 order-lg-1">
                       <img
-                        src="./media/images/weather app.png"
+                        src="./media/images/weather app.webp"
                         class="c-project-img c-project-right"
                         alt="..."
                       />
@@ -838,7 +846,7 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- ! Footer -->
     <footer class="c-footer">
       <div class="container py-3">
         <div
@@ -917,6 +925,25 @@
       </div>
     </footer>
 
+    <!-- ! Spinner -->
+    <div>
+      <div class="c-spinner-overlay">
+        <div class="c-spinner-wrapper">
+          <div class="spinner-grow c-spinner-grow" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+
+          <div class="spinner-grow c-spinner-grow" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+
+          <div class="spinner-grow c-spinner-grow" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -933,7 +960,9 @@
 
     <!-- Scripts -->
     <script src="./js/shared/layout.js"></script>
-    <script src="./js/index.js"></script>
+
+    <script src="./js/animation.js"></script>
     <script src="./js/particles.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

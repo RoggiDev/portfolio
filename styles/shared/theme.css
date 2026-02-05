@@ -1,20 +1,18 @@
-/* Light mode */
+/* ! Dark mode */
 :root {
   --base-color: #0b0e1b;
   --alt-color: #171717;
   --primary-color: #0ee6b7;
-  --secondary-color: #e6e6e6;
-  --accent-color: #4da6ff;
+  --secondary-color: #ffffff;
   --primary-text: #f8f8ff;
   --secondary-text: #e6e6e68c;
-  --alternative-text: #ffffff;
 }
 
-/* Dark mode */
-.lightmode {
-  --base-color: #fefefe;
-  --alt-color: #f5f5f5;
-  --accent-color: #0066cc;
-  --primary-text: #020d19;
-  --secondary-text: #636569;
-}
+/* ! Light mode */
+/* .lightmode {
+  --base-color: #0b0e1b;
+  --alt-color: #171717;
+  --primary-color: #0ee6b7;
+  --primary-text: #f8f8ff;
+  --secondary-text: #e6e6e68c;
+} */

@@ -1,7 +1,4 @@
-.c-container {
-  flex: 1;
-}
-
+/* ! Navbar */
 .c-navbar {
   background: transparent;
   border-bottom: 1px solid #ffffff50;
@@ -20,7 +17,7 @@
 
 .c-navbar-title {
   font-family: "Audiowide";
-  color: var(--alternative-text);
+  color: var(--primary-text);
 }
 
 .c-offcanvas {
@@ -43,17 +40,52 @@
 }
 
 .c-offcanvas-title-link {
-  color: var(--alternative-text);
+  color: var(--primary-text);
   font-family: "Audiowide";
 }
 
+/* ! Footer */
 .c-footer {
   background: transparent;
   border-top: 1px solid #ffffff50;
 }
 
 .c-footer .c-socials-icon {
-  fill: var(--alternative-text);
+  fill: var(--secondary-text);
   width: 1.5rem;
   aspect-ratio: 1;
+  transition:
+    fill 0.25s ease,
+    transform 0.25s ease;
+}
+
+.c-footer .c-socials-icon:hover {
+  fill: var(--secondary-color);
+  transform: translateY(-1px) scale(1.1);
+}
+
+/* ! Spinner */
+.c-spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--base-color);
+  transition: opacity 1s ease-in;
+}
+
+.c-spinner-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.c-spinner-grow {
+  color: var(--primary-color);
+  height: 30px;
+  width: 30px;
 }
