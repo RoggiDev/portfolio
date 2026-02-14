@@ -33,11 +33,14 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
 
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
     <!-- ! Header -->
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top c-navbar">
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-md navbar-dark fixed-top c-navbar"
+      >
         <div class="container">
           <a class="navbar-brand fw-bold c-navbar-title" href="#hero">
             ROGGI DEV
@@ -82,25 +85,25 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#hero">Home</a>
+                  <a class="nav-link c-nav-link" href="#hero">Home</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#about">About Me</a>
+                  <a class="nav-link c-nav-link" href="#about">About Me</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#myStack">My Stack</a>
+                  <a class="nav-link c-nav-link" href="#myStack">My Stack</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#experience">
+                  <a class="nav-link c-nav-link" href="#experience">
                     Experience
                   </a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#projects">Projects</a>
+                  <a class="nav-link c-nav-link" href="#projects">Projects</a>
                 </li>
               </ul>
             </div>
@@ -654,6 +657,7 @@
                         src="./media/images/timbremos juntos.webp"
                         class="c-project-img c-project-right"
                         alt="..."
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -669,6 +673,7 @@
                         src="./media/images/gta landing page.webp"
                         class="c-project-img c-project-left"
                         alt="..."
+                        loading="lazy"
                       />
                     </div>
 
@@ -838,6 +843,7 @@
                         src="./media/images/weather app.webp"
                         class="c-project-img c-project-right"
                         alt="..."
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -858,7 +864,10 @@
           <div
             class="col-12 col-sm-auto d-flex justify-content-center align-items-center"
           >
-            <p class="mb-0">Made by Roggi Dev</p>
+            <p class="mb-0">
+              &copy; 2026
+              <span class="c-author">Roggi Dev</span>
+            </p>
           </div>
 
           <div
@@ -928,9 +937,9 @@
       </div>
     </footer>
 
-    <!-- ! Spinner -->
+    <!-- ! Loader -->
     <div>
-      <div class="c-spinner-overlay">
+      <div class="c-loader-overlay">
         <div class="loader">
           <div class="load1"></div>
           <div class="load2"></div>
