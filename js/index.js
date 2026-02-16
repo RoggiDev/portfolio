@@ -39,6 +39,8 @@ dataNumber.forEach((data) => {
       scrollTrigger: {
         trigger: ".c-data",
         start: "top 90%",
+        // end: "top 80%",
+        // scrub: true,
         // markers: true,
       },
       val: endValue,
@@ -150,6 +152,7 @@ document.querySelectorAll(".c-work-experience").forEach((card) => {
 // ! Projects
 document.querySelectorAll(".c-card").forEach((card, index) => {
   const wrapper = card.closest(".c-card-trigger");
+  const img = card.querySelector(".c-card .c-project-img");
   const left = card.getBoundingClientRect().left;
 
   let x = left * 1;
@@ -158,26 +161,36 @@ document.querySelectorAll(".c-card").forEach((card, index) => {
     x = left * -1;
   }
 
-  gsap.fromTo(
-    card,
-    {
-      x: x,
-      y: 75,
-      opacity: 0,
+  gsap.from(card, {
+    scrollTrigger: {
+      trigger: wrapper,
+      start: "top 70%",
+      end: "top center+=28",
+      scrub: 1,
+      // markers: true,
     },
-    {
-      scrollTrigger: {
-        trigger: wrapper,
-        start: "top 70%",
-        // end: "bottom top+=56",
-        // scrub: 1,
-        // markers: true,
-      },
-      x: 0,
-      y: 0,
-      opacity: 1,
-      ease: "power2.out",
-      duration: 1,
+    opacity: 0,
+    x: x,
+    yPercent: 100,
+  });
+
+  gsap.set(img, { filter: "grayscale(100%)" });
+
+  const cardImgTimeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: wrapper,
+      start: "top center+=28",
+      end: "bottom top+=56",
+      scrub: true,
+      // markers: true,
     },
-  );
+  });
+
+  cardImgTimeline
+    .to(img, {
+      filter: "grayscale(0%)",
+    })
+    .to(img, {
+      filter: "grayscale(100%)",
+    });
 });
