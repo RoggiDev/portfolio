@@ -18,6 +18,21 @@ window.addEventListener("load", () => {
 
       body.style.overflowY = "visible";
       body.style.height = "100%";
+
+      // ! Typing animation
+      const occupation = document.querySelector(".c-hero-subtitle");
+
+      occupation.textContent = "";
+
+      let typed = new Typed(occupation, {
+        strings: ["React Developer", "Frontend Developer", "Web Developer"],
+        typeSpeed: 60,
+        backSpeed: 30,
+        backDelay: 1500,
+        smartBackspace: true,
+        showCursor: false,
+        loop: true,
+      });
     },
   });
 });
