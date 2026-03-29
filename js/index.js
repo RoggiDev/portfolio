@@ -54,6 +54,7 @@ dataNumber.forEach((data) => {
       scrollTrigger: {
         trigger: ".c-data",
         start: "top 90%",
+        toggleActions: "play none none reverse",
         // end: "top 80%",
         // scrub: true,
         // markers: true,
@@ -75,6 +76,7 @@ gsap.from(".c-stack-card", {
   scrollTrigger: {
     trigger: ".c-grid",
     start: "top bottom",
+    toggleActions: "play none none reverse",
     // markers: true,
   },
   y: 100,
