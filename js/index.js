@@ -138,7 +138,6 @@ gsap.to(".c-timeline-dot", {
 
 document.querySelectorAll(".c-work-experience").forEach((card) => {
   const wrapper = card.closest(".c-work-trigger");
-
   const baseShadow = "inset 0 1px 2px #ffffff50";
 
   const tl = gsap.timeline({
@@ -169,45 +168,19 @@ document.querySelectorAll(".c-work-experience").forEach((card) => {
 // ! Projects
 document.querySelectorAll(".c-card").forEach((card, index) => {
   const wrapper = card.closest(".c-card-trigger");
-  const img = card.querySelector(".c-card .c-project-img");
-  const left = card.getBoundingClientRect().left;
-
-  let x = left * 1;
-
-  if (card.classList.contains("c-card-right")) {
-    x = left * -1;
-  }
+  const isRight = card.classList.contains("c-card-right");
 
   gsap.from(card, {
     scrollTrigger: {
       trigger: wrapper,
-      start: "top 70%",
+      start: "top 80%",
       end: "top center+=28",
-      scrub: 1,
+      scrub: 0.5,
       // markers: true,
     },
     opacity: 0,
-    x: x,
-    yPercent: 100,
+    x: isRight ? 100 : -100,
+    y: 50,
+    willChange: "transform, opacity",
   });
-
-  gsap.set(img, { filter: "grayscale(100%)" });
-
-  const cardImgTimeline = gsap.timeline({
-    scrollTrigger: {
-      trigger: wrapper,
-      start: "top center+=28",
-      end: "bottom top+=56",
-      scrub: true,
-      // markers: true,
-    },
-  });
-
-  cardImgTimeline
-    .to(img, {
-      filter: "grayscale(0%)",
-    })
-    .to(img, {
-      filter: "grayscale(100%)",
-    });
 });
