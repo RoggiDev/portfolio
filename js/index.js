@@ -114,26 +114,26 @@ gsap.to(".c-timeline-line", {
   scrollTrigger: {
     trigger: ".c-timeline",
     start: "top bottom",
-    end: "bottom 10%+=56",
-    scrub: 1,
+    end: "bottom 20%+=56",
+    scrub: 0.5,
     // markers: true,
   },
   height: "100%",
   duration: 1,
-  ease: "power1.inOut",
+  ease: "none",
 });
 
 gsap.to(".c-timeline-dot", {
   scrollTrigger: {
     trigger: ".c-timeline",
     start: "top bottom",
-    end: "bottom 10%+=56",
-    scrub: 1,
+    end: "bottom 20%+=56",
+    scrub: 0.5,
     // markers: true,
   },
   top: "100%",
   duration: 1,
-  ease: "power1.inOut",
+  ease: "none",
 });
 
 document.querySelectorAll(".c-work-experience").forEach((card) => {
@@ -145,7 +145,7 @@ document.querySelectorAll(".c-work-experience").forEach((card) => {
       trigger: wrapper,
       start: "top bottom",
       end: "bottom top+=56",
-      scrub: 1,
+      scrub: 0.5,
       // markers: true,
     },
   });

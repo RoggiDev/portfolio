@@ -18,6 +18,7 @@
 .c-navbar-title {
   font-family: "Audiowide";
   color: var(--primary-text);
+  margin-right: 0px;
 }
 
 .c-offcanvas {
@@ -44,10 +45,17 @@
   font-family: "Audiowide";
 }
 
+.c-nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .c-nav-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: var(--primary-text);
 }
 
@@ -354,12 +362,6 @@
 }
 
 /* ! Media Queries */
-@media (min-width: 399.2px) {
-  .c-nav-link {
-    justify-content: start;
-  }
-}
-
 @media (min-width: 576px) {
 }
 
@@ -369,13 +371,12 @@
     -webkit-backdrop-filter: blur(0px);
     backdrop-filter: blur(0px);
   }
-
-  .c-nav-buttons {
-    margin-left: 16px;
-  }
 }
 
 @media (min-width: 992px) {
+  .c-nav-buttons {
+    margin-left: 16px;
+  }
 }
 
 @media (min-width: 1200px) {
