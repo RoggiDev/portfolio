@@ -25,7 +25,12 @@ window.addEventListener("load", () => {
       occupation.textContent = "";
 
       let typed = new Typed(occupation, {
-        strings: ["React Developer", "Frontend Developer", "Web Developer"],
+        strings: [
+          "Front End Engineer",
+          "Creative Developer",
+          "Web Developer",
+          "404 Not Found",
+        ],
         typeSpeed: 60,
         backSpeed: 30,
         backDelay: 1500,
@@ -138,30 +143,18 @@ gsap.to(".c-timeline-dot", {
 
 document.querySelectorAll(".c-work-experience").forEach((card) => {
   const wrapper = card.closest(".c-work-trigger");
-  const baseShadow = "inset 0 1px 2px #ffffff50";
 
-  const tl = gsap.timeline({
+  gsap.from(card, {
     scrollTrigger: {
       trigger: wrapper,
-      start: "top bottom",
-      end: "bottom top+=56",
+      start: "top 80%",
+      end: "top center+=28",
       scrub: 0.5,
       // markers: true,
     },
-  });
-
-  tl.fromTo(
-    card,
-    {
-      boxShadow: `${baseShadow}, 0 0 0px var(--primary-color)`,
-    },
-    {
-      boxShadow: `${baseShadow}, 0 0 10px var(--primary-color)`,
-      ease: "none",
-    },
-  ).to(card, {
-    boxShadow: `${baseShadow}, 0 0 0px var(--primary-color)`,
-    ease: "none",
+    opacity: 0,
+    x: 100,
+    willChange: "transform, opacity",
   });
 });
 
@@ -181,6 +174,10 @@ document.querySelectorAll(".c-card").forEach((card, index) => {
     opacity: 0,
     x: isRight ? 100 : -100,
     y: 50,
+    rotationX: -90,
+    rotationY: isRight ? -6 : 6,
+    rotationZ: isRight ? -3 : 3,
+    ease: "power2.out",
     willChange: "transform, opacity",
   });
 });
