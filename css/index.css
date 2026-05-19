@@ -171,6 +171,10 @@
 }
 
 /* ! Experience */
+#experience {
+  overflow: hidden;
+}
+
 .c-timeline {
   position: relative;
   overflow: visible;
