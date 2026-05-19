@@ -42,7 +42,42 @@ window.addEventListener("load", () => {
   });
 });
 
+// ! 3D Card Animation
+function animateCard3D(card) {
+  card.addEventListener("mousemove", (event) => {
+    const rect = card.getBoundingClientRect();
+
+    const relativeX = (event.clientX - rect.left) / rect.width;
+    const relativeY = (event.clientY - rect.top) / rect.height;
+
+    const tiltX = (relativeY - 0.5) * -3;
+    const tiltY = (relativeX - 0.5) * 4;
+
+    gsap.to(card, {
+      rotateX: tiltX,
+      rotateY: tiltY,
+      scale: 0.97,
+      transformPerspective: 700,
+      duration: 1,
+      ease: "power2.out",
+    });
+  });
+
+  card.addEventListener("mouseleave", () => {
+    gsap.to(card, {
+      rotateX: 0,
+      rotateY: 0,
+      scale: 1,
+      duration: 1,
+      ease: "power2.out",
+    });
+  });
+}
+
 // ! About
+const aboutCard = document.querySelector(".c-about-card");
+animateCard3D(aboutCard);
+
 const dataNumber = document.querySelectorAll(".c-data-number");
 
 dataNumber.forEach((data) => {
@@ -77,7 +112,9 @@ dataNumber.forEach((data) => {
 });
 
 // ! My Stack
-gsap.from(".c-stack-card", {
+const stackCards = document.querySelectorAll(".c-stack-card");
+
+gsap.from(stackCards, {
   scrollTrigger: {
     trigger: ".c-grid",
     start: "top bottom",
@@ -86,12 +123,12 @@ gsap.from(".c-stack-card", {
   },
   y: 100,
   opacity: 0,
+  rotationX: -45,
+  rotationY: -45,
   ease: "power2.inOut",
   duration: 0.8,
   stagger: 0.1,
 });
-
-const stackCards = document.querySelectorAll(".c-stack-card");
 
 stackCards.forEach((card) => {
   const hoverTween = gsap.to(card, {
@@ -141,7 +178,9 @@ gsap.to(".c-timeline-dot", {
   ease: "none",
 });
 
-document.querySelectorAll(".c-work-experience").forEach((card) => {
+const workExperienceCards = document.querySelectorAll(".c-work-experience");
+
+workExperienceCards.forEach((card) => {
   const wrapper = card.closest(".c-work-trigger");
 
   gsap.from(card, {
@@ -154,6 +193,9 @@ document.querySelectorAll(".c-work-experience").forEach((card) => {
     },
     opacity: 0,
     x: 100,
+    rotationX: 2,
+    rotationY: -40,
+    rotationZ: 2,
     willChange: "transform, opacity",
   });
 });
@@ -166,13 +208,13 @@ document.querySelectorAll(".c-card").forEach((card, index) => {
   gsap.from(card, {
     scrollTrigger: {
       trigger: wrapper,
-      start: "top 80%",
-      end: "top center+=28",
+      start: "top 90%",
+      end: "35% center+=28",
       scrub: 0.5,
       // markers: true,
     },
     opacity: 0,
-    x: isRight ? 100 : -100,
+    x: isRight ? 75 : -75,
     y: 50,
     rotationX: -90,
     rotationY: isRight ? -6 : 6,
