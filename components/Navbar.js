@@ -86,7 +86,7 @@ export class CustomNavbar extends LitElement {
           <div class="c-nav-buttons">
             <!-- Resume -->
             <a
-              href="/media/documents/Yael Rodríguez - React Developer - Resume.pdf"
+              href="/media/documents/YaelRodríguez-FrontEndEngineer-Resume.pdf"
               target="_blank"
               class="c-resume-btn"
             >

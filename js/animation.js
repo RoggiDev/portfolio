@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger);
 
-  const lenis = new Lenis({
-    duration: 2,
-  });
+  const lenis = new Lenis();
 
   lenis.on("scroll", ScrollTrigger.update);
 
