@@ -155,7 +155,7 @@ gsap.set(".c-timeline-dot", {
 gsap.to(".c-timeline-line", {
   scrollTrigger: {
     trigger: ".c-timeline",
-    start: "top bottom",
+    start: "top 80%",
     end: "bottom 20%+=56",
     scrub: 0.5,
     // markers: true,
@@ -168,7 +168,7 @@ gsap.to(".c-timeline-line", {
 gsap.to(".c-timeline-dot", {
   scrollTrigger: {
     trigger: ".c-timeline",
-    start: "top bottom",
+    start: "top 80%",
     end: "bottom 20%+=56",
     scrub: 0.5,
     // markers: true,

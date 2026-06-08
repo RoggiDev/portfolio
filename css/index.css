@@ -9,6 +9,7 @@
 /* ! Hero */
 #hero {
   overflow: hidden;
+  overflow-anchor: none;
 }
 
 .c-hero-section {
