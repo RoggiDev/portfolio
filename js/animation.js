@@ -12,8 +12,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   gsap.ticker.lagSmoothing(0);
-
-  window.addEventListener("resize", () => {
-    window.location = "/";
-  });
 });
