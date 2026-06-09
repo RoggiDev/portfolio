@@ -1,3 +1,5 @@
+// // @ts-check
+
 // ! Spinner
 window.addEventListener("load", () => {
   const body = document.body;
