@@ -13,6 +13,7 @@ export class CustomNavbar extends LitElement {
     super();
   }
 
+  // Light DOM rendering
   createRenderRoot() {
     return this;
   }

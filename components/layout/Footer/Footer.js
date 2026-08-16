@@ -13,6 +13,7 @@ export class CustomFooter extends LitElement {
     super();
   }
 
+  // Light DOM rendering
   createRenderRoot() {
     return this;
   }

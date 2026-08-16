@@ -62,15 +62,21 @@
       href="https://unpkg.com/lenis@1.3.17/dist/lenis.css"
     />
 
-    <!-- Styles -->
+    <!-- Shared Styles -->
     <link rel="stylesheet" href="./css/shared/site.css" />
     <link rel="stylesheet" href="./css/shared/theme.css" />
     <link rel="stylesheet" href="./css/shared/variables.css" />
     <link rel="stylesheet" href="./css/shared/layout.css" />
     <link rel="stylesheet" href="./css/shared/loader.css" />
 
-    <link rel="stylesheet" href="./css/components/project.css" />
+    <!-- Components -->
+    <link rel="stylesheet" href="./components/cards/WorkCard/WorkCard.css" />
+    <link
+      rel="stylesheet"
+      href="./components/cards/ProjectCard/ProjectCard.css"
+    />
 
+    <!-- Main Styles -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
 
@@ -184,11 +190,11 @@
               Developer focused on building modern, interactive, and
               high-performance web solutions. I'm detail oriented and enjoy
               creating not only functional, but visually engaging web
-              experiences through clean code, reusable components, performance
-              optimization, smooth animations and modern development practices.
-              I enjoy taking on challenges, solving complex problems and
-              crafting premium digital experiences that balance creativity,
-              usability, performance and business goals.
+              experiences through clean code, Responsive Web Design, reusable UI
+              components, performance optimization and Web Animations. I enjoy
+              taking on challenges and solving complex problems while crafting
+              premium digital experiences that balance creativity, usability,
+              performance and business goals.
             </p>
 
             <div
@@ -197,7 +203,8 @@
               <div class="col d-flex flex-column flex-md-row gap-3 gap-md-5">
                 <p class="mb-0 d-flex justify-content-center gap-2 c-data">
                   <span class="c-data-number">02</span>
-                  <!-- <span>+</span> -->
+
+                  <span>+</span>
                 </p>
 
                 <p class="mb-0 align-content-center text-center c-data-text">
@@ -207,7 +214,7 @@
 
               <div class="col d-flex flex-column flex-md-row gap-3 gap-md-5">
                 <p class="mb-0 d-flex justify-content-center c-data">
-                  <span class="c-data-number">06</span>
+                  <span class="c-data-number">07</span>
                 </p>
 
                 <p class="mb-0 align-content-center text-center c-data-text">
@@ -284,30 +291,6 @@
                   </div>
                 </div>
 
-                <!-- Tailwind -->
-                <div class="col">
-                  <div class="c-stack-card">
-                    <svg
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="c-stack-icon"
-                    >
-                      <title>Tailwind CSS</title>
-
-                      <path
-                        d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"
-                      />
-                    </svg>
-
-                    <div>
-                      <p class="mb-0 c-stack-title">Tailwind</p>
-
-                      <p class="mb-0 c-stack-text">CSS framework</p>
-                    </div>
-                  </div>
-                </div>
-
                 <!-- JavaScript -->
                 <div class="col">
                   <div class="c-stack-card">
@@ -351,7 +334,7 @@
                     <div>
                       <p class="mb-0 c-stack-title">Bootstrap</p>
 
-                      <p class="mb-0 c-stack-text">Component library</p>
+                      <p class="mb-0 c-stack-text">Responsive CSS Framework</p>
                     </div>
                   </div>
                 </div>
@@ -476,6 +459,55 @@
                   </div>
                 </div>
 
+                <!-- Tailwind -->
+                <div class="col">
+                  <div class="c-stack-card">
+                    <svg
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="c-stack-icon"
+                    >
+                      <title>Tailwind CSS</title>
+
+                      <path
+                        d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"
+                      />
+                    </svg>
+
+                    <div>
+                      <p class="mb-0 c-stack-title">Tailwind</p>
+
+                      <p class="mb-0 c-stack-text">
+                        Utility-First CSS Framework
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Shadcn/ui -->
+                <div class="col">
+                  <div class="c-stack-card">
+                    <svg
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="c-stack-icon"
+                    >
+                      <title>Shadcn/ui</title>
+                      <path
+                        d="M22.219 11.784 11.784 22.219c-.407.407-.407 1.068 0 1.476.407.407 1.068.407 1.476 0L23.695 13.26c.407-.408.407-1.069 0-1.476-.408-.407-1.069-.407-1.476 0ZM20.132.305.305 20.132c-.407.407-.407 1.068 0 1.476.408.407 1.069.407 1.476 0L21.608 1.781c.407-.407.407-1.068 0-1.476-.408-.407-1.069-.407-1.476 0Z"
+                      />
+                    </svg>
+
+                    <div>
+                      <p class="mb-0 c-stack-title">Shadcn/ui</p>
+
+                      <p class="mb-0 c-stack-text">UI Component Library</p>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- TypeScript -->
                 <div class="col">
                   <div class="c-stack-card">
@@ -583,23 +615,37 @@
 
                   <ul class="mb-0 c-tasks">
                     <li>
-                      Built and maintained responsive web interfaces for
-                      electronic invoicing and internal management systems.
+                      Built and maintained responsive web interfaces for ASP
+                      .NET and PHP business applications built for electronic
+                      invoicing, supplier management and internal management
+                      systems.
+                    </li>
+
+                    <li>Implemented client-side form validation.</li>
+
+                    <li>
+                      Integrated Front-End interfaces with Back-End services
+                      through REST APIs.
                     </li>
 
                     <li>
-                      Connected Front End views with Back End services through
-                      REST APIs.
+                      Debugged and resolved issues in business applications.
                     </li>
 
                     <li>
-                      Displayed database query results in dynamic tables using
-                      DataTables.
+                      Developed SQL queries and implemented dynamic DataTables
+                      for displaying query results.
                     </li>
 
                     <li>
-                      Designed and developed 2 informational websites focusing
-                      on visual presentation, performance and user experience.
+                      Implemented user access controls to manage access to
+                      application features and interfaces.
+                    </li>
+
+                    <li>
+                      Designed and developed informational websites with a focus
+                      on Responsive Web Design, performance optimization, Web
+                      Animations, interactivity, and user experience.
                     </li>
                   </ul>
 
@@ -618,7 +664,9 @@
 
                     <span class="c-tech-badge">GSAP</span>
 
-                    <span class="c-tech-badge">REST APIs</span>
+                    <span class="c-tech-badge">REST API</span>
+
+                    <span class="c-tech-badge">C#</span>
 
                     <span class="c-tech-badge">PHP</span>
 
@@ -631,7 +679,7 @@
               <div class="c-work-trigger">
                 <div class="p-4 c-work-experience">
                   <div class="d-flex flex-column gap-2">
-                    <p class="mb-0 c-post">Web Developer Intern</p>
+                    <p class="mb-0 c-post">Web Developer</p>
 
                     <div
                       class="d-flex flex-column flex-md-row gap-0 gap-md-2 c-job-time"
@@ -648,17 +696,24 @@
 
                   <ul class="mb-0 c-tasks">
                     <li>
-                      Built a web application project named "Tool and Inventory
-                      Control System" for the University Engineering Workshops.
+                      Designed and developed a web application for the
+                      University Engineering Workshops to manage tools and
+                      inventory.
                     </li>
 
                     <li>
-                      Connected the web app with a local server and database.
+                      Implemented a basic username and password authentication
+                      system to control access to the application.
                     </li>
 
                     <li>
-                      Implemented a dashboard with dynamic graphs to present the
-                      most relevant data to the user.
+                      Developed responsive interfaces with tables, forms, and
+                      validations for managing database data.
+                    </li>
+
+                    <li>
+                      Implemented an interactive dashboard with dynamic charts
+                      for data visualization.
                     </li>
                   </ul>
 
@@ -1344,6 +1399,109 @@
                   </div>
                 </div>
               </div>
+
+              <!-- # 08 -->
+              <div class="c-card-trigger">
+                <div class="card c-card c-card-right">
+                  <div class="row g-0">
+                    <div
+                      class="col-12 col-lg-7 order-0 order-lg-1 c-project-image-container"
+                    >
+                      <img
+                        src="./media/images/html xls converter.webp"
+                        class="c-project-img c-project-right"
+                        alt="Movie App"
+                        title="Movie App"
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <div
+                      class="col-12 col-lg order-1 order-lg-0 c-project-text-container"
+                    >
+                      <div class="card-body c-card-body">
+                        <h3 class="card-title c-project-title">
+                          HTML XLS Converter
+                        </h3>
+
+                        <p class="card-text c-project-description">
+                          Full-stack web app for converting legacy HTML based
+                          XLS files into modern XLSX files, preserving the
+                          original structure, headers, tables and data.
+                        </p>
+
+                        <div class="c-tech-list">
+                          <span class="c-tech-badge">HTML</span>
+
+                          <span class="c-tech-badge">CSS</span>
+
+                          <span class="c-tech-badge">JavaScript</span>
+
+                          <span class="c-tech-badge">Bootstrap</span>
+
+                          <span class="c-tech-badge">Node.js</span>
+
+                          <span class="c-tech-badge">Express.js</span>
+
+                          <span class="c-tech-badge">Multer</span>
+
+                          <span class="c-tech-badge">Cheerio</span>
+
+                          <span class="c-tech-badge">Sheet.js</span>
+                        </div>
+
+                        <div class="c-project-links">
+                          <a
+                            href="https://html-xls-converter.onrender.com/"
+                            target="_blank"
+                            rel="noopener"
+                            class="c-project-link"
+                          >
+                            View Live
+
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-chevron-right c-view-icon"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                              />
+                            </svg>
+                          </a>
+
+                          <a
+                            href="https://github.com/RoggiDev/html-xls-converter"
+                            target="_blank"
+                            rel="noopener"
+                            class="c-project-link"
+                          >
+                            View Repo
+
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-chevron-right c-view-icon"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1388,8 +1546,8 @@
     <script src="./js/shared/layout.js"></script>
 
     <!-- Components -->
-    <script type="module" src="./components/layout/Navbar.js"></script>
-    <script type="module" src="./components/layout/Footer.js"></script>
+    <script type="module" src="./components/layout/Navbar/Navbar.js"></script>
+    <script type="module" src="./components/layout/Footer/Footer.js"></script>
 
     <!-- Scripts -->
     <script src="./js/animation.js"></script>
