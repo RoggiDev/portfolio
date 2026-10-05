@@ -39,17 +39,17 @@ a {
 
 button {
   cursor: pointer;
-  transition: transform 0.2s ease;
+  /* transition: transform 0.2s ease; */
 }
 
-button:hover {
+/* button:hover {
   filter: brightness(90%);
   transform: scale(1.1);
 }
 
 button:active {
   transform: translateY(2px);
-}
+} */
 
 img,
 picture,

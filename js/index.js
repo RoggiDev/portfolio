@@ -1,49 +1,5 @@
 // // @ts-check
 
-// ! Spinner
-window.addEventListener("load", () => {
-  const body = document.body;
-  const loaderOverlay = document.querySelector(".c-loader-overlay");
-
-  gsap.set(body, {
-    overflowY: "hidden",
-    height: "100vh",
-  });
-
-  gsap.to(loaderOverlay, {
-    opacity: 0,
-    duration: 0.6,
-    delay: 2,
-    ease: "power1.out",
-    onComplete() {
-      loaderOverlay.style.pointerEvents = "none";
-
-      body.style.overflowY = "visible";
-      body.style.height = "100%";
-
-      // ! Typing animation
-      const occupation = document.querySelector(".c-hero-subtitle");
-
-      occupation.textContent = "";
-
-      let typed = new Typed(occupation, {
-        strings: [
-          "Front End Engineer",
-          "Creative Developer",
-          "Web Developer",
-          "404 Not Found",
-        ],
-        typeSpeed: 60,
-        backSpeed: 30,
-        backDelay: 1500,
-        smartBackspace: true,
-        showCursor: false,
-        loop: true,
-      });
-    },
-  });
-});
-
 // ! 3D Card Animation
 function animateCard3D(card) {
   card.addEventListener("mousemove", (event) => {
