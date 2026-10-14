@@ -1,11 +1,8 @@
-// // @ts-check
-
 import { getTranslations } from "../../js/i18n.js";
 
 import {
   LitElement,
   html,
-  css,
 } from "https://cdn.jsdelivr.net/gh/lit/dist@3/all/lit-all.min.js";
 
 export class CustomNavbar extends LitElement {
@@ -19,6 +16,8 @@ export class CustomNavbar extends LitElement {
     this.translations = {
       navigation: {},
     };
+
+    this.translationsReady = this.loadTranslations();
   }
 
   // Light DOM rendering
@@ -29,12 +28,16 @@ export class CustomNavbar extends LitElement {
   async connectedCallback() {
     super.connectedCallback();
 
+    this.translationsReady = this.loadTranslations();
+  }
+
+  async loadTranslations() {
     this.translations = await getTranslations();
   }
 
   // Render the UI as a function of component state
   render() {
-    const { navigation } = this.translations;
+    const navigation = this.translations.navigation;
     const { home, about, stack, experience, projects, resume } = navigation;
 
     return html`
@@ -160,11 +163,11 @@ export class CustomNavbar extends LitElement {
                 class="mt-2 dropdown-menu dropdown-menu-dark dropdown-menu-end"
               >
                 <li>
-                  <a class="dropdown-item" href="/">English (US)</a>
+                  <a class="dropdown-item" href="/">🇺🇸 English</a>
                 </li>
 
                 <li>
-                  <a class="dropdown-item" href="/es">Español</a>
+                  <a class="dropdown-item" href="/es">🇲🇽 Español</a>
                 </li>
               </ul>
             </div> -->
