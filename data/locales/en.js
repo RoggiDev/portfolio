@@ -14,6 +14,34 @@ export const professionalTitles = [
   "404 Not Found",
 ];
 
+export const workExperience = {
+  "w-front-dev-timbremos-juntos": {
+    post: "Front End Developer",
+    activities: [
+      "Built and maintained responsive web interfaces for ASP .NET and PHP business applications built for electronic invoicing, supplier management and internal management systems.",
+      "Implemented client-side form validation.",
+      "Integrated Front-End interfaces with Back-End services through REST APIs.",
+      "Debugged and resolved issues in business applications.",
+      "Developed SQL queries and implemented dynamic DataTables for displaying query results.",
+      "Implemented user access controls to manage access to application features and interfaces.",
+      "Designed and developed informational websites with a focus on Responsive Web Design, performance optimization, Web Animations, interactivity, and user experience.",
+    ],
+  },
+  "w-web-dev-la-salle": {
+    post: "Web Developer",
+    activities: [
+      "Designed and developed a web application for the University Engineering Workshops to manage tools and inventory.",
+      "Implemented a basic username and password authentication system to control access to the application.",
+      "Developed responsive interfaces with tables, forms, and validations for managing database data.",
+      "Implemented an interactive dashboard with dynamic charts for data visualization.",
+    ],
+  },
+};
+
+export const currentJob = {
+  currentJobLabel: "Now",
+};
+
 export const projects = {
   "p-dev-overflow": {
     title: "Dev Overflow",

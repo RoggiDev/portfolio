@@ -8,11 +8,39 @@ export const navigation = {
 };
 
 export const professionalTitles = [
-  "Ingeniero de Front End",
-  "Desarrollador Creativo",
-  "Programador Web",
+  "Front End Engineer",
+  "Creative Developer",
+  "Web Developer",
   "404 Not Found",
 ];
+
+export const workExperience = {
+  "w-front-dev-timbremos-juntos": {
+    title: "Desarrollador Front End",
+    activities: [
+      "Desarrollé e integré vistas responsivas y componentes reutilizables en sistemas empresariales ASP .NET y PHP para facturación electrónica, gestión de proveedores y control interno.",
+      "Implementé validaciones del lado del cliente.",
+      "Integré interfaces Front End con servicios Back End mediante consumo de REST APIs.",
+      "Realicé debugging, análisis y resolución de errores.",
+      "Realicé consultas SQL e implementé tablas dinámicas para la visualización información de bases de datos.",
+      "Implementé controles de acceso de usuario para la visualización y acceso a funcionalidades del sistema.",
+      "Diseñé y desarrollé sitios web informativos enfocados en Responsive Web Design, optimización de rendimiento, Web Animations, interactividad y experiencia de usuario.",
+    ],
+  },
+  "w-web-dev-la-salle": {
+    title: "Web Developer",
+    activities: [
+      "Designed and developed a web application for the University Engineering Workshops to manage tools and inventory.",
+      "Implemented a basic username and password authentication system to control access to the application.",
+      "Developed responsive interfaces with tables, forms, and validations for managing database data.",
+      "Implemented an interactive dashboard with dynamic charts for data visualization.",
+    ],
+  },
+};
+
+export const currentJob = {
+  currentJobLabel: "Actual",
+};
 
 export const projects = {
   "p-dev-overflow": {

@@ -3,6 +3,7 @@ import { getTranslations } from "../../js/i18n.js";
 import {
   LitElement,
   html,
+  css,
 } from "https://cdn.jsdelivr.net/gh/lit/dist@3/all/lit-all.min.js";
 
 export class CustomProjectCard extends LitElement {
@@ -44,17 +45,17 @@ export class CustomProjectCard extends LitElement {
 
   // Render the UI as a function of component state
   render() {
-    const project = this.translations.projects?.[this.projectId];
+    const projectTranslation = this.translations.projects?.[this.projectId];
 
-    if (!project) {
+    if (!projectTranslation) {
       return html``;
     }
 
-    const { title, description } = project;
+    const { title, description } = projectTranslation;
     const { viewLive, viewRepo } = this.translations.projectButtons;
 
     return html`
-      <div class="c-card-trigger" id=${this.projectId}>
+      <div id=${this.projectId} class="c-card-trigger">
         <div
           class="card c-card ${Number(this.projectIndex) % 2
             ? "c-card-right"
