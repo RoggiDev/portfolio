@@ -13,8 +13,8 @@ export const projects = [
       "MongoDB",
       "Pino",
     ],
-    liveUrl: "https://html-xls-converter.onrender.com/",
-    githubUrl: "https://github.com/RoggiDev/html-xls-converter",
+    liveUrl: "https://jsmastery-devflow-rose.vercel.app/",
+    githubUrl: "https://github.com/RoggiDev/jsmastery_devflow",
   },
   {
     id: "p-xml-converter",
@@ -62,7 +62,7 @@ export const projects = [
       "Geo API",
     ],
     liveUrl: "https://weather-app-qk0t.onrender.com/",
-    githubUrl: "https://github.com/RoggiDev/weather_app",
+    githubUrl: "https://github.com/RoggiDev/weather-app",
   },
   /* {
     id: "p-jsm-gta-landing-page",
